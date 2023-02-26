@@ -58,10 +58,9 @@
 
 
     <div class="navbar">
-      <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-      <a href="#"><i class="fa fa-fw fa-envelope"></i> Service</a>
-      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="#saloninfo"><i class="fa fa-fw fa-home"></i> SALON INFO</a>
+      <a href="#moreinfo"><i class="fa fa-fw fa-search"></i> MORE INFO</a>
+      <a href="#bookservice"><i class="fa fa-fw fa-envelope"></i> BOOK SERVICE</a>
     </div>
 
     </body>
@@ -71,12 +70,13 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-sm-4">
+        <div id="saloninfo" class="saloninfo"></div>
         <h3> <span class="glyphicon glyphicon-time"></span>Business time</h3>
         <p>Mon - Fri</p>
         <p>10am - 5pm</p>
       </div>
       <div class="col-sm-4">
-        <h3><span class="glyphicon glyphicon-home"></span> Salon address</h3>
+        <h3><span class="glyphicon glyphicon-home"></span> Salon Info</h3>
         <p>555 Lees Avenue, Ottawa, ON, 1E2 3R4</p>
         <a class="image featured"><img src="image/map.png" width="360" height="300" /></a>
       </div>
@@ -109,6 +109,7 @@
   </div>
 
   <div class="container">
+    <div id="moreinfo"></div>
     <h2><span class="glyphicon glyphicon-info-sign"></span>More Information</h2>
     <a href="#hairdressers" class="btn btn-primary btn-block" data-toggle="collapse">Meet our hairdressers</a>
     <div id="hairdressers" class="card-columns">
@@ -135,8 +136,9 @@
 
 
   <div class="container">
+    <div id="bookservice"></div>
     <div class="container-md p-3 my-3 border bg-info text-black">
-      <h1>G8 hair salon</h1>
+      <h1>Book G8 hair salon</h1>
       <p>Bring you different experience!</p>
     </div>
     <div id="accordion">
@@ -182,7 +184,10 @@
               <p>Form to enter name, email, phone</p>
 
               <p>Name: <input type="text" name="name"></p>
-              <p>Ordered Hairdresser: <input type="text" name="service"></p>
+              <p>Ordered Hairdresser: <select id="Hairdresser" >
+                <option value="Shoulder Dori" selected="selected">Shoulder Dori</option>
+                <option value="Shiny Ruo">Shiny Ruo</option>
+              </select></p>
               <p>Email: <input type="text" number="number"></p>
               <p>Phone Number: <input type="text" number="number"></p>
               <br>
